@@ -1,0 +1,14 @@
+apps:
+  - name: tracker
+    repo: git@github.com:alvin/app-tracker.git
+    route: /tracker
+    status: planned
+    deployed_at: null
+    description: Personal progress tracker (gym, French, Japanese, piano)
+
+  - name: portal
+    repo: git@github.com:alvin/app-portal.git
+    route: /
+    status: planned
+    deployed_at: null
+    description: App portal and home page
