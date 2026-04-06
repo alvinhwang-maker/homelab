@@ -3,7 +3,7 @@
 set -e
 
 APP=$1
-APPS_DIR=/srv/apps
+APPS_DIR=${APPS_DIR:-"$HOME/apps"}
 REGISTRY="$(dirname "$0")/registry.yaml"
 
 if [ -z "$APP" ]; then
