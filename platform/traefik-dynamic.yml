@@ -1,0 +1,14 @@
+http:
+  routers:
+    apache:
+      entryPoints:
+        - web
+      rule: "PathPrefix(`/`)"
+      service: apache
+      priority: 1        # lowest priority — all app routes take precedence
+
+  services:
+    apache:
+      loadBalancer:
+        servers:
+          - url: "http://host.docker.internal:8090"
